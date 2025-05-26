@@ -1,0 +1,426 @@
+[
+  {
+    "id": 1,
+    "name": "Ultra HD 4K CCTV Security Camera",
+    "category": "CCTV Cameras",
+    "price": 199.99,
+    "oldPrice": 249.99,
+    "description": "Professional-grade 4K Ultra HD security camera with night vision and weather-resistant housing. Perfect for outdoor surveillance with crystal-clear video quality even in low light conditions.",
+    "inStock": true,
+    "featured": true,
+    "averageRating": 4.8,
+    "reviewCount": 124,
+    "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1595939692949-4727e186eb8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1650652964220-ca824189e9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "4K Ultra HD resolution (3840 x 2160)",
+      "130° wide-angle lens",
+      "50m night vision range with infrared LEDs",
+      "IP67 weatherproof rating",
+      "Motion detection with instant alerts",
+      "Compatible with Smart Shield mobile app"
+    ],
+    "specifications": {
+      "Resolution": "4K Ultra HD (3840 x 2160)",
+      "Field of View": "130°",
+      "Night Vision": "50m range with infrared LEDs",
+      "Weather Resistance": "IP67 rated",
+      "Power Source": "12V DC / PoE",
+      "Storage": "Supports up to 128GB microSD card",
+      "Connectivity": "Ethernet, WiFi",
+      "Operating Temperature": "-30°C to 60°C"
+    },
+    "warranty": "2-year manufacturer warranty",
+    "createdAt": "2023-01-15T14:48:00.000Z",
+    "reviews": [
+      {
+        "author": "John D.",
+        "rating": 5,
+        "date": "2023-05-12",
+        "comment": "Excellent camera! The 4K resolution makes a huge difference in identifying people and vehicles. Night vision is exceptional as well."
+      },
+      {
+        "author": "Sarah M.",
+        "rating": 4,
+        "date": "2023-03-28",
+        "comment": "Great quality picture and easy to set up. The only downside is that the app could use some improvements."
+      },
+      {
+        "author": "Robert L.",
+        "rating": 5,
+        "date": "2023-02-10",
+        "comment": "Survived a major storm and still works perfectly. Image quality is outstanding and the notifications are reliable."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Smart Doorbell Camera with Two-Way Audio",
+    "category": "Smart Security",
+    "price": 149.99,
+    "oldPrice": null,
+    "description": "Keep an eye on your front door with this smart doorbell camera. Features two-way audio, motion detection, and HD video. Get instant alerts when visitors arrive or packages are delivered.",
+    "inStock": true,
+    "featured": true,
+    "averageRating": 4.6,
+    "reviewCount": 89,
+    "imageUrl": "https://images.unsplash.com/photo-1558000143-a78f8299c40b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1558000143-a78f8299c40b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611095567319-2f4c389168a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "1080p HD video quality",
+      "Two-way audio communication",
+      "Motion detection with customizable zones",
+      "Night vision",
+      "Weather-resistant design",
+      "Instant mobile alerts",
+      "Cloud storage option"
+    ],
+    "specifications": {
+      "Resolution": "1080p HD",
+      "Field of View": "160°",
+      "Night Vision": "Yes",
+      "Weather Resistance": "IP65 rated",
+      "Power Source": "Battery (rechargeable) or Wired",
+      "Battery Life": "Up to 6 months per charge",
+      "Connectivity": "WiFi 2.4GHz",
+      "Storage": "Local + Cloud options"
+    },
+    "warranty": "1-year manufacturer warranty",
+    "createdAt": "2023-03-10T09:15:00.000Z",
+    "reviews": [
+      {
+        "author": "Emily R.",
+        "rating": 5,
+        "date": "2023-06-05",
+        "comment": "So glad I got this doorbell camera! Already caught a package thief in the act and the video quality was good enough for police to identify them."
+      },
+      {
+        "author": "Michael P.",
+        "rating": 4,
+        "date": "2023-05-22",
+        "comment": "Works great overall. The motion detection is sometimes a bit too sensitive, but better that than missing something important."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "8-Channel Smart NVR System with 4 Cameras",
+    "category": "CCTV Systems",
+    "price": 599.99,
+    "oldPrice": 699.99,
+    "description": "Complete security solution with an 8-channel NVR and four 2K cameras. Monitor your entire property with this expandable system that offers continuous recording, motion detection, and remote viewing capabilities.",
+    "inStock": true,
+    "featured": true,
+    "averageRating": 4.9,
+    "reviewCount": 56,
+    "imageUrl": "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1648211750999-a6be8338766c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "8-channel NVR with 2TB storage (expandable)",
+      "4 included 2K resolution cameras",
+      "H.265+ video compression",
+      "AI-powered human and vehicle detection",
+      "Expandable up to 8 cameras",
+      "Easy mobile app integration",
+      "24/7 continuous recording"
+    ],
+    "specifications": {
+      "NVR Capacity": "8 channels, supports up to 8MP cameras",
+      "Storage": "2TB HDD pre-installed (expandable to 8TB)",
+      "Camera Resolution": "2K (2560 × 1440)",
+      "Night Vision": "30m range",
+      "Weather Resistance": "IP67 rated cameras",
+      "Power": "PoE (Power over Ethernet)",
+      "Compatibility": "ONVIF compliant",
+      "Remote Access": "Smart Shield app (iOS/Android) and Web Client"
+    },
+    "warranty": "3-year manufacturer warranty with professional installation",
+    "createdAt": "2023-02-05T11:32:00.000Z",
+    "reviews": [
+      {
+        "author": "James W.",
+        "rating": 5,
+        "date": "2023-05-18",
+        "comment": "Excellent system for our small business. Installation was straightforward and the image quality is superb. The AI detection significantly reduces false alerts."
+      },
+      {
+        "author": "Patricia L.",
+        "rating": 5,
+        "date": "2023-04-02",
+        "comment": "Best security investment we've made for our home. The system is easy to use and knowing we can add more cameras as needed is great."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "PTZ Dome Security Camera with 25x Optical Zoom",
+    "category": "CCTV Cameras",
+    "price": 349.99,
+    "oldPrice": 399.99,
+    "description": "Advanced PTZ (Pan-Tilt-Zoom) dome camera with incredible 25x optical zoom capability for monitoring large areas. Remote control functionality allows you to adjust viewing angles and zoom from anywhere.",
+    "inStock": true,
+    "featured": false,
+    "averageRating": 4.7,
+    "reviewCount": 42,
+    "imageUrl": "https://images.unsplash.com/photo-1541323477077-3fcbaefa62e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1541323477077-3fcbaefa62e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "25x optical zoom capability",
+      "360° endless pan and 90° tilt",
+      "Full HD 1080p resolution",
+      "120m IR night vision distance",
+      "Auto-tracking functionality",
+      "Preset positions and patrol routes",
+      "IP66 weatherproof rating"
+    ],
+    "specifications": {
+      "Resolution": "1080p Full HD",
+      "Optical Zoom": "25x",
+      "Pan Range": "360° endless",
+      "Tilt Range": "-15° to 90°",
+      "Night Vision": "120m IR distance",
+      "Weather Resistance": "IP66 rated",
+      "Power": "AC24V / PoE+",
+      "Connectivity": "Ethernet"
+    },
+    "warranty": "2-year manufacturer warranty",
+    "createdAt": "2023-01-20T16:48:00.000Z",
+    "reviews": [
+      {
+        "author": "Thomas B.",
+        "rating": 5,
+        "date": "2023-06-12",
+        "comment": "The zoom capability on this camera is impressive. We use it to monitor our parking lot and can easily read license plates from across the property."
+      },
+      {
+        "author": "Laura K.",
+        "rating": 4,
+        "date": "2023-04-30",
+        "comment": "Great camera overall. The PTZ functions work smoothly and the preset patrol routes are a great feature. Took off one star because the app could be more intuitive."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Wireless Indoor Security Camera",
+    "category": "Smart Security",
+    "price": 89.99,
+    "oldPrice": 99.99,
+    "description": "Compact and easy-to-install wireless indoor security camera with 1080p HD video, two-way audio, and night vision. Perfect for monitoring pets, children, or elderly family members.",
+    "inStock": true,
+    "featured": true,
+    "averageRating": 4.5,
+    "reviewCount": 112,
+    "imageUrl": "https://images.unsplash.com/photo-1615483586184-97540fa63b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1615483586184-97540fa63b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "1080p HD video quality",
+      "110° wide-angle lens",
+      "Two-way audio",
+      "Night vision up to 10m",
+      "Motion and sound detection alerts",
+      "Easy wireless setup",
+      "Works with Smart Shield mobile app"
+    ],
+    "specifications": {
+      "Resolution": "1080p Full HD",
+      "Field of View": "110°",
+      "Night Vision": "10m range with IR LEDs",
+      "Audio": "Built-in mic and speaker",
+      "Power Source": "AC adapter (included)",
+      "Connectivity": "WiFi 2.4GHz",
+      "Storage": "Cloud storage or MicroSD card (up to 128GB)"
+    },
+    "warranty": "1-year manufacturer warranty",
+    "createdAt": "2023-03-25T10:15:00.000Z",
+    "reviews": [
+      {
+        "author": "Jennifer L.",
+        "rating": 5,
+        "date": "2023-06-08",
+        "comment": "Perfect little camera for keeping an eye on my pets while I'm at work. The two-way audio is great for calming my dog when he gets anxious."
+      },
+      {
+        "author": "David R.",
+        "rating": 4,
+        "date": "2023-05-14",
+        "comment": "Good quality for the price. The night vision is better than I expected for an indoor camera."
+      },
+      {
+        "author": "Michelle T.",
+        "rating": 5,
+        "date": "2023-04-01",
+        "comment": "Easy setup and great picture quality. I bought three more after trying the first one!"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "4TB Security Hard Drive",
+    "category": "Accessories",
+    "price": 129.99,
+    "oldPrice": null,
+    "description": "High-performance 4TB hard drive specifically designed for 24/7 security system operation. Optimized for continuous recording and playback from multiple high-resolution cameras.",
+    "inStock": true,
+    "featured": false,
+    "averageRating": 4.8,
+    "reviewCount": 36,
+    "imageUrl": "https://images.unsplash.com/photo-1531492643958-815c21e64af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1531492643958-815c21e64af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "4TB storage capacity",
+      "Designed for 24/7 operation",
+      "Supports up to 64 HD cameras",
+      "Enhanced durability for security applications",
+      "Low power consumption",
+      "Quiet operation",
+      "Compatible with all major NVR and DVR systems"
+    ],
+    "specifications": {
+      "Capacity": "4TB",
+      "Form Factor": "3.5-inch",
+      "Interface": "SATA 6Gb/s",
+      "Cache": "64MB",
+      "Workload Rate": "180TB/year",
+      "MTBF": "1 million hours",
+      "Power": "5.3W operational, 3.4W idle"
+    },
+    "warranty": "3-year manufacturer warranty",
+    "createdAt": "2023-02-18T09:48:00.000Z",
+    "reviews": [
+      {
+        "author": "Richard K.",
+        "rating": 5,
+        "date": "2023-05-29",
+        "comment": "Perfect upgrade for our NVR system. Much more storage than the stock drive that came with our system."
+      },
+      {
+        "author": "Karen J.",
+        "rating": 5,
+        "date": "2023-04-15",
+        "comment": "Reliable and quiet. Easy to install in our SmartShield NVR."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Smart Security Motion Sensor - 3 Pack",
+    "category": "Smart Security",
+    "price": 79.99,
+    "oldPrice": 99.99,
+    "description": "Set of three wireless motion sensors that integrate with your Smart Shield security system. Get instant alerts when motion is detected, with adjustable sensitivity to reduce false alarms.",
+    "inStock": true,
+    "featured": false,
+    "averageRating": 4.6,
+    "reviewCount": 58,
+    "imageUrl": "https://images.unsplash.com/photo-1585557124308-d6510a6b7b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1585557124308-d6510a6b7b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Pet-friendly motion detection",
+      "Wireless design for flexible placement",
+      "Adjustable sensitivity",
+      "Integration with Smart Shield app",
+      "Instant push notifications",
+      "Battery life indicator",
+      "Easy installation"
+    ],
+    "specifications": {
+      "Detection Range": "10m with 110° angle",
+      "Battery Life": "Up to 2 years",
+      "Power Source": "CR123A battery (included)",
+      "Connectivity": "Smart Shield Hub (required)",
+      "Size": "5.8 × 4.2 × 2.5 cm",
+      "Operating Temperature": "-10°C to 50°C"
+    },
+    "warranty": "2-year manufacturer warranty",
+    "createdAt": "2023-03-08T14:25:00.000Z",
+    "reviews": [
+      {
+        "author": "Steven P.",
+        "rating": 5,
+        "date": "2023-06-10",
+        "comment": "These sensors work perfectly with our Smart Shield system. The pet mode is great - no false alarms from our cats."
+      },
+      {
+        "author": "Nancy G.",
+        "rating": 4,
+        "date": "2023-05-02",
+        "comment": "Good quality sensors. Battery life seems good so far and the sensitivity adjustment is helpful."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Professional CCTV Installation Service",
+    "category": "Services",
+    "price": 299.99,
+    "oldPrice": null,
+    "description": "Expert installation service for your Smart Shield security system. Our certified technicians will install, configure, and optimize your cameras and recording equipment for maximum coverage and performance.",
+    "inStock": true,
+    "featured": false,
+    "averageRating": 4.9,
+    "reviewCount": 87,
+    "imageUrl": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Professional installation by certified technicians",
+      "Optimal camera placement and configuration",
+      "Complete system testing",
+      "User training session",
+      "Mobile app setup and configuration",
+      "Cable management and concealment",
+      "90-day installation guarantee"
+    ],
+    "specifications": {
+      "Service Duration": "4-6 hours (typical)",
+      "Coverage": "Up to 8 cameras",
+      "Includes": "Installation, setup, testing, and training",
+      "Appointment": "Scheduled within 7 business days",
+      "Additional Fees": "May apply for complex installations or extra cabling",
+      "Requirements": "Functioning power outlets and internet connection"
+    },
+    "warranty": "90-day workmanship guarantee",
+    "createdAt": "2023-01-10T11:25:00.000Z",
+    "reviews": [
+      {
+        "author": "William T.",
+        "rating": 5,
+        "date": "2023-06-02",
+        "comment": "The technician was professional, knowledgeable, and did an excellent job hiding the cables. Would definitely recommend the installation service."
+      },
+      {
+        "author": "Sandra M.",
+        "rating": 5,
+        "date": "2023-04-28",
+        "comment": "Worth every penny! The installer knew exactly where to position the cameras for maximum coverage and took the time to show us how to use the app properly."
+      },
+      {
+        "author": "Kevin B.",
+        "rating": 4,
+        "date": "2023-03-15",
+        "comment": "Good service overall. The installer arrived on time and completed the work professionally. The only reason for 4 stars instead of 5 is that it took longer than expected."
+      }
+    ]
+  }
+]

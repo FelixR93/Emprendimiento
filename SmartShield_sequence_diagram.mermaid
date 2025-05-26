@@ -1,0 +1,178 @@
+sequenceDiagram
+    participant Client as Cliente (Navegador)
+    participant AuthAPI as API de Autenticación
+    participant UserAPI as API de Usuarios
+    participant AuthService as Servicio de Autenticación
+    participant UserService as Servicio de Usuarios
+    participant DB as Base de datos
+    participant EmailService as Servicio de Email
+
+    %% Registro de usuario
+    Client->>AuthAPI: POST /api/auth/register (datos de registro)
+    AuthAPI->>AuthService: register(userData)
+    AuthService->>AuthService: validateUserData(userData)
+    AuthService->>UserService: checkEmailExists(email)
+    UserService->>DB: query(email)
+    DB-->>UserService: result
+    UserService-->>AuthService: exists/not exists
+    AuthService->>AuthService: hashPassword(password)
+    AuthService->>UserService: createUser(userData)
+    UserService->>DB: insert(userData)
+    DB-->>UserService: userId
+    UserService-->>AuthService: user
+    AuthService->>AuthService: generateVerificationToken(user)
+    AuthService->>EmailService: sendVerificationEmail(email, token)
+    AuthService-->>AuthAPI: user & token
+    AuthAPI-->>Client: 201 Created (user data & token)
+
+    %% Inicio de sesión
+    Client->>AuthAPI: POST /api/auth/login (email, password)
+    AuthAPI->>AuthService: login(email, password)
+    AuthService->>UserService: getUserByEmail(email)
+    UserService->>DB: query(email)
+    DB-->>UserService: user data
+    UserService-->>AuthService: user
+    AuthService->>AuthService: verifyPassword(password, user.password)
+    alt Password incorrect
+        AuthService-->>AuthAPI: Authentication failed
+        AuthAPI-->>Client: 401 Unauthorized
+    else Password correct
+        alt Two-factor enabled
+            AuthService-->>AuthAPI: Request 2FA code
+            AuthAPI-->>Client: 200 OK (requires 2FA)
+            Client->>AuthAPI: POST /api/auth/verify-2fa (code)
+            AuthAPI->>AuthService: verifyTwoFactor(userId, code)
+            AuthService->>AuthService: validateCode(code)
+            AuthService-->>AuthAPI: valid/invalid
+            alt Code valid
+                AuthService->>AuthService: generateTokens(user)
+                AuthService-->>AuthAPI: tokens
+                AuthAPI-->>Client: 200 OK (tokens)
+            else Code invalid
+                AuthAPI-->>Client: 401 Unauthorized
+            end
+        else Two-factor not enabled
+            AuthService->>AuthService: generateTokens(user)
+            AuthService-->>AuthAPI: tokens
+            AuthAPI-->>Client: 200 OK (tokens)
+        end
+    end
+
+sequenceDiagram
+    participant Client as Cliente (Navegador)
+    participant ProductAPI as API de Productos
+    participant ProductService as Servicio de Productos
+    participant DB as Base de datos
+    participant Cache as Caché Redis
+
+    %% Navegación por el catálogo
+    Client->>ProductAPI: GET /api/categories
+    ProductAPI->>ProductService: getCategories()
+    ProductService->>Cache: get("categories")
+    alt Cache hit
+        Cache-->>ProductService: categories
+    else Cache miss
+        ProductService->>DB: query(categories)
+        DB-->>ProductService: categories data
+        ProductService->>Cache: set("categories", categories, TTL)
+    end
+    ProductService-->>ProductAPI: categories
+    ProductAPI-->>Client: 200 OK (categories)
+
+    %% Búsqueda de productos
+    Client->>ProductAPI: GET /api/products?search=cámara&category=cctv&price=100-500
+    ProductAPI->>ProductService: searchProducts(query, filters)
+    ProductService->>Cache: get("search:cámara:cctv:100-500")
+    alt Cache hit
+        Cache-->>ProductService: products
+    else Cache miss
+        ProductService->>DB: search(query, filters)
+        DB-->>ProductService: products data
+        ProductService->>Cache: set("search:cámara:cctv:100-500", products, TTL)
+    end
+    ProductService-->>ProductAPI: products
+    ProductAPI-->>Client: 200 OK (products)
+
+    %% Detalles del producto
+    Client->>ProductAPI: GET /api/products/{productId}
+    ProductAPI->>ProductService: getProduct(productId)
+    ProductService->>Cache: get("product:{productId}")
+    alt Cache hit
+        Cache-->>ProductService: product
+    else Cache miss
+        ProductService->>DB: query(productId)
+        DB-->>ProductService: product data
+        ProductService->>Cache: set("product:{productId}", product, TTL)
+    end
+    ProductService-->>ProductAPI: product
+    ProductAPI-->>Client: 200 OK (product)
+
+sequenceDiagram
+    participant Client as Cliente (Navegador)
+    participant CartAPI as API de Carrito
+    participant CartService as Servicio de Carrito
+    participant ProductService as Servicio de Productos
+    participant OrderAPI as API de Órdenes
+    participant OrderService as Servicio de Órdenes
+    participant PaymentAPI as API de Pagos
+    participant PaymentService as Servicio de Pagos
+    participant DB as Base de datos
+    participant PaymentProvider as Proveedor de Pago (Stripe/PayPal)
+    participant EmailService as Servicio de Email
+
+    %% Agregar producto al carrito
+    Client->>CartAPI: POST /api/cart/items (productId, quantity)
+    CartAPI->>CartService: addItem(userId, productId, quantity)
+    CartService->>ProductService: getProduct(productId)
+    ProductService->>DB: query(productId)
+    DB-->>ProductService: product data
+    ProductService-->>CartService: product
+    CartService->>CartService: validateStock(product, quantity)
+    CartService->>DB: query(cart for userId)
+    DB-->>CartService: cart data
+    CartService->>DB: update/insert cart item
+    DB-->>CartService: updated cart
+    CartService-->>CartAPI: cart data
+    CartAPI-->>Client: 200 OK (cart data)
+
+    %% Proceso de checkout
+    Client->>OrderAPI: POST /api/orders (shipping, payment details)
+    OrderAPI->>OrderService: createOrder(userId, orderData)
+    OrderService->>CartService: getCart(userId)
+    CartService->>DB: query(cart for userId)
+    DB-->>CartService: cart data
+    CartService-->>OrderService: cart
+    OrderService->>ProductService: validateAndUpdateStock(items)
+    ProductService->>DB: transaction start
+    ProductService->>DB: check and update stock
+    DB-->>ProductService: result
+    ProductService-->>OrderService: success/failure
+    alt Stock validation failed
+        ProductService->>DB: transaction rollback
+        OrderService-->>OrderAPI: stock error
+        OrderAPI-->>Client: 400 Bad Request (stock error)
+    else Stock validation succeeded
+        OrderService->>DB: create order
+        DB-->>OrderService: orderId
+        OrderService->>PaymentService: initiatePayment(order, paymentDetails)
+        PaymentService->>PaymentProvider: createPaymentIntent(amount, currency, etc.)
+        PaymentProvider-->>PaymentService: paymentIntentId, clientSecret
+        PaymentService-->>OrderService: paymentInfo
+        OrderService->>DB: update order with paymentInfo
+        ProductService->>DB: transaction commit
+        OrderService->>CartService: clearCart(userId)
+        CartService->>DB: delete cart items
+        OrderService-->>OrderAPI: order with payment info
+        OrderAPI-->>Client: 201 Created (order with payment info)
+
+        %% Confirmación de pago
+        Client->>PaymentAPI: POST /api/payments/confirm (paymentIntentId)
+        PaymentAPI->>PaymentService: confirmPayment(paymentIntentId)
+        PaymentService->>PaymentProvider: confirmPaymentIntent(paymentIntentId)
+        PaymentProvider-->>PaymentService: paymentResult
+        PaymentService->>OrderService: updateOrderPaymentStatus(orderId, status)
+        OrderService->>DB: update order payment status
+        OrderService->>EmailService: sendOrderConfirmation(order)
+        PaymentService-->>PaymentAPI: result
+        PaymentAPI-->>Client: 200 OK (payment result)
+    end

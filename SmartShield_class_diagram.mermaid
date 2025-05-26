@@ -1,0 +1,262 @@
+classDiagram
+    class User {
+        -String _id
+        -String email
+        -String password
+        -String name
+        -String lastName
+        -String phone
+        -UserRole role
+        -Address[] addresses
+        -PaymentMethod[] paymentMethods
+        -Date createdAt
+        -Date updatedAt
+        +register(userData)
+        +login(email, password)
+        +updateProfile(userData)
+        +changePassword(oldPassword, newPassword)
+        +resetPassword(token, newPassword)
+        +addAddress(address)
+        +removeAddress(addressId)
+        +setDefaultAddress(addressId)
+        +addPaymentMethod(paymentMethod)
+        +removePaymentMethod(paymentMethodId)
+        +setDefaultPaymentMethod(paymentMethodId)
+    }
+
+    class Address {
+        -String _id
+        -String type
+        -String street
+        -String city
+        -String state
+        -String zipCode
+        -String country
+        -Boolean isDefault
+    }
+
+    class PaymentMethod {
+        -String _id
+        -String type
+        -String lastFour
+        -Date expiryDate
+        -Boolean isDefault
+    }
+
+    class Product {
+        -String _id
+        -String name
+        -String slug
+        -String description
+        -String shortDescription
+        -Number price
+        -Number discount
+        -Number stock
+        -String sku
+        -String brand
+        -Category category
+        -Category subcategory
+        -String[] images
+        -Specification[] specifications
+        -String[] features
+        -Product[] relatedProducts
+        -Product[] compatibleAccessories
+        -Rating ratings
+        -Date createdAt
+        -Date updatedAt
+        +getDiscountedPrice()
+        +isInStock()
+        +updateStock(quantity)
+        +calculateRating(newRating)
+    }
+
+    class Specification {
+        -String key
+        -String value
+    }
+
+    class Rating {
+        -Number average
+        -Number count
+    }
+
+    class Category {
+        -String _id
+        -String name
+        -String slug
+        -String description
+        -String image
+        -Category parent
+        -Boolean isActive
+        -Number order
+        -Date createdAt
+        -Date updatedAt
+        +getFullPath()
+        +getSubcategories()
+        +getProducts()
+    }
+
+    class Order {
+        -String _id
+        -User user
+        -String orderNumber
+        -OrderItem[] items
+        -ShippingInfo shipping
+        -PaymentInfo payment
+        -Number subtotal
+        -Number tax
+        -Number total
+        -OrderStatus status
+        -String notes
+        -Date createdAt
+        -Date updatedAt
+        +calculateTotal()
+        +updateStatus(newStatus)
+        +cancelOrder(reason)
+        +processRefund()
+    }
+
+    class OrderItem {
+        -Product product
+        -Number quantity
+        -Number price
+        -String name
+        +calculateSubtotal()
+    }
+
+    class ShippingInfo {
+        -Address address
+        -String method
+        -Number cost
+        -String trackingCode
+    }
+
+    class PaymentInfo {
+        -String method
+        -String transactionId
+        -String status
+    }
+
+    class SupportTicket {
+        -String _id
+        -String ticketNumber
+        -User user
+        -String subject
+        -String description
+        -String category
+        -TicketPriority priority
+        -TicketStatus status
+        -User assignedTo
+        -TicketMessage[] messages
+        -Order relatedOrder
+        -Product relatedProduct
+        -Date createdAt
+        -Date updatedAt
+        -Date resolvedAt
+        +addMessage(message)
+        +updateStatus(newStatus)
+        +assignTo(userId)
+        +escalate(reason)
+        +resolve(resolution)
+    }
+
+    class TicketMessage {
+        -User sender
+        -String content
+        -String[] attachments
+        -Date timestamp
+    }
+
+    class Cart {
+        -String _id
+        -User user
+        -CartItem[] items
+        -Date createdAt
+        -Date updatedAt
+        +addItem(productId, quantity)
+        +removeItem(productId)
+        +updateItemQuantity(productId, quantity)
+        +clearCart()
+        +calculateTotal()
+        +applyPromoCode(code)
+    }
+
+    class CartItem {
+        -Product product
+        -Number quantity
+        +calculateSubtotal()
+    }
+
+    class Auth {
+        +register(userData)
+        +login(email, password)
+        +logout()
+        +refreshToken(refreshToken)
+        +forgotPassword(email)
+        +resetPassword(token, newPassword)
+        +verifyEmail(token)
+        +setupTwoFactor(userId)
+        +verifyTwoFactor(userId, token)
+        +generateJWT(user)
+    }
+
+    class UserManager {
+        +getUsers(filters)
+        +getUser(userId)
+        +createUser(userData)
+        +updateUser(userId, userData)
+        +deleteUser(userId)
+        +assignRole(userId, role)
+    }
+
+    class ProductManager {
+        +getProducts(filters)
+        +getProduct(productId)
+        +createProduct(productData)
+        +updateProduct(productId, productData)
+        +deleteProduct(productId)
+        +updateStock(productId, quantity)
+        +searchProducts(query, filters)
+    }
+
+    class OrderManager {
+        +getOrders(filters)
+        +getOrder(orderId)
+        +createOrder(orderData)
+        +updateOrderStatus(orderId, status)
+        +processPayment(orderId, paymentData)
+        +cancelOrder(orderId, reason)
+    }
+
+    class SupportManager {
+        +getTickets(filters)
+        +getTicket(ticketId)
+        +createTicket(ticketData)
+        +updateTicket(ticketId, ticketData)
+        +addTicketMessage(ticketId, messageData)
+        +assignTicket(ticketId, userId)
+        +closeTicket(ticketId, resolution)
+    }
+
+    class PaymentProcessor {
+        +processStripePayment(paymentData)
+        +processPayPalPayment(paymentData)
+        +handlePaymentWebhook(providerData)
+        +refundPayment(orderId, amount, reason)
+    }
+
+    User "1" -- "*" Address : has
+    User "1" -- "*" PaymentMethod : has
+    User "1" -- "*" Order : places
+    User "1" -- "*" SupportTicket : creates
+    Product "1" -- "*" OrderItem : contains
+    Product "*" -- "*" Category : belongs to
+    Order "1" -- "*" OrderItem : contains
+    Order "1" -- "1" ShippingInfo : has
+    Order "1" -- "1" PaymentInfo : has
+    SupportTicket "1" -- "*" TicketMessage : contains
+    SupportTicket "0..1" -- "1" Order : references
+    SupportTicket "0..1" -- "1" Product : references
+    Cart "1" -- "*" CartItem : contains
+    CartItem "1" -- "1" Product : references
+    User "1" -- "0..1" Cart : has
