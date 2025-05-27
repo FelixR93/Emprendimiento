@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Ultra HD 4K CCTV Security Camera",
-    "category": "CCTV Cameras",
+    "name": "Cámara de seguridad CCTV Ultra HD 4K",
+    "category": "Cámaras CCTV",
     "price": 199.99,
     "oldPrice": 249.99,
-    "description": "Professional-grade 4K Ultra HD security camera with night vision and weather-resistant housing. Perfect for outdoor surveillance with crystal-clear video quality even in low light conditions.",
+    "description": "Cámara de seguridad 4K Ultra HD de calidad profesional con visión nocturna y carcasa resistente a la intemperie. Perfecta para vigilancia en exteriores con una calidad de video nítida incluso en condiciones de poca luz.",
     "inStock": true,
     "featured": true,
     "averageRating": 4.8,
@@ -18,53 +18,53 @@
       "https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "4K Ultra HD resolution (3840 x 2160)",
-      "130° wide-angle lens",
-      "50m night vision range with infrared LEDs",
-      "IP67 weatherproof rating",
-      "Motion detection with instant alerts",
-      "Compatible with Smart Shield mobile app"
+      "Resolución 4K Ultra HD (3840 x 2160)",
+      "Lente gran angular de 130°",
+      "Alcance de visión nocturna de 50 m con LED infrarrojos",
+      "Clasificación de resistencia a la intemperie IP67",
+      "Detección de movimiento con alertas instantáneas",
+      "Compatible con la aplicación móvil Smart Shield"
     ],
     "specifications": {
       "Resolution": "4K Ultra HD (3840 x 2160)",
       "Field of View": "130°",
-      "Night Vision": "50m range with infrared LEDs",
-      "Weather Resistance": "IP67 rated",
+      "Night Vision": "Alcance de 50 m con LED infrarrojos",
+      "Weather Resistance": "Clasificación IP67",
       "Power Source": "12V DC / PoE",
-      "Storage": "Supports up to 128GB microSD card",
+      "Storage": "Admite tarjetas microSD de hasta 128 GB",
       "Connectivity": "Ethernet, WiFi",
       "Operating Temperature": "-30°C to 60°C"
     },
-    "warranty": "2-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 2 años",
     "createdAt": "2023-01-15T14:48:00.000Z",
     "reviews": [
       {
         "author": "John D.",
         "rating": 5,
-        "date": "2023-05-12",
-        "comment": "Excellent camera! The 4K resolution makes a huge difference in identifying people and vehicles. Night vision is exceptional as well."
+        "date": "2025-05-12",
+        "comment": "¡Excelente cámara! La resolución 4K marca una gran diferencia al identificar personas y vehículos. La visión nocturna también es excepcional."
       },
       {
         "author": "Sarah M.",
         "rating": 4,
-        "date": "2023-03-28",
-        "comment": "Great quality picture and easy to set up. The only downside is that the app could use some improvements."
+        "date": "2025-03-28",
+        "comment": "Excelente calidad de imagen y fácil de configurar. El único inconveniente es que la aplicación podría mejorarse."
       },
       {
         "author": "Robert L.",
         "rating": 5,
-        "date": "2023-02-10",
-        "comment": "Survived a major storm and still works perfectly. Image quality is outstanding and the notifications are reliable."
+        "date": "2025-02-10",
+        "comment": "Sobrevivió a una gran tormenta y sigue funcionando perfectamente. La calidad de imagen es excepcional y las notificaciones son fiables."
       }
     ]
   },
   {
     "id": 2,
-    "name": "Smart Doorbell Camera with Two-Way Audio",
-    "category": "Smart Security",
+    "name": "Timbre inteligente con cámara y audio bidireccional",
+    "category": "Seguridad inteligente",
     "price": 149.99,
     "oldPrice": null,
-    "description": "Keep an eye on your front door with this smart doorbell camera. Features two-way audio, motion detection, and HD video. Get instant alerts when visitors arrive or packages are delivered.",
+    "description": "Vigila tu puerta principal con este timbre con cámara inteligente. Cuenta con audio bidireccional, detección de movimiento y video HD. Recibe alertas instantáneas cuando llegan visitas o se entregan paquetes.",
     "inStock": true,
     "featured": true,
     "averageRating": 4.6,
@@ -75,48 +75,48 @@
       "https://images.unsplash.com/photo-1611095567319-2f4c389168a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "1080p HD video quality",
-      "Two-way audio communication",
-      "Motion detection with customizable zones",
-      "Night vision",
-      "Weather-resistant design",
-      "Instant mobile alerts",
-      "Cloud storage option"
+      "Calidad de video HD de 1080p",
+      "Comunicación de audio bidireccional",
+      "Detección de movimiento con zonas personalizables",
+      "Visión nocturna",
+      "Diseño resistente a la intemperie",
+      "Alertas móviles instantáneas",
+      "Opción de almacenamiento en la nube"
     ],
     "specifications": {
       "Resolution": "1080p HD",
       "Field of View": "160°",
-      "Night Vision": "Yes",
-      "Weather Resistance": "IP65 rated",
-      "Power Source": "Battery (rechargeable) or Wired",
-      "Battery Life": "Up to 6 months per charge",
+      "Night Vision": "Sí",
+      "Weather Resistance": "Clasificación IP65",
+      "Power Source": "Batería (recargable) o con cable",
+      "Battery Life": "Hasta 6 meses por carga",
       "Connectivity": "WiFi 2.4GHz",
-      "Storage": "Local + Cloud options"
+      "Storage": "Opciones locales + nube"
     },
-    "warranty": "1-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 1 año",
     "createdAt": "2023-03-10T09:15:00.000Z",
     "reviews": [
       {
         "author": "Emily R.",
         "rating": 5,
-        "date": "2023-06-05",
-        "comment": "So glad I got this doorbell camera! Already caught a package thief in the act and the video quality was good enough for police to identify them."
+        "date": "2025-06-05",
+        "comment": "¡Me alegro mucho de haber comprado este timbre con cámara! Ya pillé a un ladrón de paquetes en plena acción y la calidad del vídeo fue lo suficientemente buena como para que la policía lo identificara."
       },
       {
         "author": "Michael P.",
         "rating": 4,
-        "date": "2023-05-22",
-        "comment": "Works great overall. The motion detection is sometimes a bit too sensitive, but better that than missing something important."
+        "date": "2025-05-22",
+        "comment": "En general, funciona de maravilla. La detección de movimiento a veces es demasiado sensible, pero es mejor eso que perderse algo importante."
       }
     ]
   },
   {
     "id": 3,
-    "name": "8-Channel Smart NVR System with 4 Cameras",
-    "category": "CCTV Systems",
+    "name": "Sistema NVR inteligente de 8 canales con 4 cámaras",
+    "category": "Sistemas CCTV",
     "price": 599.99,
     "oldPrice": 699.99,
-    "description": "Complete security solution with an 8-channel NVR and four 2K cameras. Monitor your entire property with this expandable system that offers continuous recording, motion detection, and remote viewing capabilities.",
+    "description": "Solución de seguridad completa con un NVR de 8 canales y cuatro cámaras 2K. Supervise toda su propiedad con este sistema expandible que ofrece grabación continua, detección de movimiento y visualización remota.",
     "inStock": true,
     "featured": true,
     "averageRating": 4.9,
@@ -127,48 +127,48 @@
       "https://images.unsplash.com/photo-1648211750999-a6be8338766c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "8-channel NVR with 2TB storage (expandable)",
-      "4 included 2K resolution cameras",
-      "H.265+ video compression",
-      "AI-powered human and vehicle detection",
-      "Expandable up to 8 cameras",
-      "Easy mobile app integration",
-      "24/7 continuous recording"
+      "NVR de 8 canales con 2 TB de almacenamiento (ampliable)",
+      "4 cámaras con resolución 2K incluidas",
+      "Compresión de vídeo H.265+",
+      "Detección de personas y vehículos con IA",
+      "Ampliable hasta 8 cámaras",
+      "Fácil integración con la aplicación móvil",
+      "Grabación continua 24/7"
     ],
     "specifications": {
-      "NVR Capacity": "8 channels, supports up to 8MP cameras",
-      "Storage": "2TB HDD pre-installed (expandable to 8TB)",
+      "NVR Capacity": "8 canales, admite cámaras de hasta 8 MP",
+      "Storage": "Disco duro de 2 TB preinstalado (ampliable a 8 TB))",
       "Camera Resolution": "2K (2560 × 1440)",
-      "Night Vision": "30m range",
-      "Weather Resistance": "IP67 rated cameras",
-      "Power": "PoE (Power over Ethernet)",
-      "Compatibility": "ONVIF compliant",
-      "Remote Access": "Smart Shield app (iOS/Android) and Web Client"
+      "Night Vision": "Alcance de 30 m",
+      "Weather Resistance": "Cámaras con clasificación IP67",
+      "Power": "PoE (Alimentación a través de Ethernet)",
+      "Compatibility": "Compatible con ONVIF",
+      "Remote Access": "Aplicación Smart Shield (iOS/Android) y cliente web"
     },
-    "warranty": "3-year manufacturer warranty with professional installation",
+    "warranty": "Garantía del fabricante de 3 años con instalación profesional.",
     "createdAt": "2023-02-05T11:32:00.000Z",
     "reviews": [
       {
         "author": "James W.",
         "rating": 5,
         "date": "2023-05-18",
-        "comment": "Excellent system for our small business. Installation was straightforward and the image quality is superb. The AI detection significantly reduces false alerts."
+        "comment": "Excelente sistema para nuestra pequeña empresa. La instalación fue sencilla y la calidad de imagen es magnífica. La detección por IA reduce significativamente las falsas alertas."
       },
       {
         "author": "Patricia L.",
         "rating": 5,
         "date": "2023-04-02",
-        "comment": "Best security investment we've made for our home. The system is easy to use and knowing we can add more cameras as needed is great."
+        "comment": "La mejor inversión en seguridad que hemos hecho para nuestra casa. El sistema es fácil de usar y saber que podemos añadir más cámaras según sea necesario es genial."
       }
     ]
   },
   {
     "id": 4,
-    "name": "PTZ Dome Security Camera with 25x Optical Zoom",
-    "category": "CCTV Cameras",
+    "name": "Cámara de seguridad domo PTZ con zoom óptico de 25x",
+    "category": "Cámaras CCTV",
     "price": 349.99,
     "oldPrice": 399.99,
-    "description": "Advanced PTZ (Pan-Tilt-Zoom) dome camera with incredible 25x optical zoom capability for monitoring large areas. Remote control functionality allows you to adjust viewing angles and zoom from anywhere.",
+    "description": "Cámara domo PTZ (Pan-Tilt-Zoom) avanzada con increíble zoom óptico de 25x para monitorear áreas extensas. La función de control remoto le permite ajustar los ángulos de visión y el zoom desde cualquier lugar.",
     "inStock": true,
     "featured": false,
     "averageRating": 4.7,
@@ -178,48 +178,48 @@
       "https://images.unsplash.com/photo-1541323477077-3fcbaefa62e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "25x optical zoom capability",
-      "360° endless pan and 90° tilt",
-      "Full HD 1080p resolution",
-      "120m IR night vision distance",
-      "Auto-tracking functionality",
-      "Preset positions and patrol routes",
-      "IP66 weatherproof rating"
+      "Zoom óptico de 25x",
+      "Panorámica continua de 360° e inclinación de 90°",
+      "Resolución Full HD 1080p",
+      "Distancia de visión nocturna infrarroja de 120 m",
+      "Función de seguimiento automático",
+      "Posiciones predefinidas y rutas de patrullaje",
+      "Clasificación de resistencia a la intemperie IP66"
     ],
     "specifications": {
       "Resolution": "1080p Full HD",
       "Optical Zoom": "25x",
-      "Pan Range": "360° endless",
-      "Tilt Range": "-15° to 90°",
-      "Night Vision": "120m IR distance",
-      "Weather Resistance": "IP66 rated",
+      "Pan Range": "360° sin fin",
+      "Tilt Range": "-15° a 90°",
+      "Night Vision": "Distancia infrarroja de 120 m",
+      "Weather Resistance": "Clasificación IP66",
       "Power": "AC24V / PoE+",
       "Connectivity": "Ethernet"
     },
-    "warranty": "2-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 2 años",
     "createdAt": "2023-01-20T16:48:00.000Z",
     "reviews": [
       {
         "author": "Thomas B.",
         "rating": 5,
-        "date": "2023-06-12",
-        "comment": "The zoom capability on this camera is impressive. We use it to monitor our parking lot and can easily read license plates from across the property."
+        "date": "2025-06-12",
+        "comment": "El zoom de esta cámara es impresionante. La usamos para vigilar nuestro estacionamiento y podemos leer fácilmente las matrículas desde cualquier punto de la propiedad."
       },
       {
         "author": "Laura K.",
         "rating": 4,
         "date": "2023-04-30",
-        "comment": "Great camera overall. The PTZ functions work smoothly and the preset patrol routes are a great feature. Took off one star because the app could be more intuitive."
+        "comment": "Excelente cámara en general. Las funciones PTZ funcionan a la perfección y las rutas de patrulla predefinidas son una gran característica. Le quité una estrella porque la aplicación podría ser más intuitiva."
       }
     ]
   },
   {
     "id": 5,
-    "name": "Wireless Indoor Security Camera",
-    "category": "Smart Security",
+    "name": "Cámara de seguridad interior inalámbrica",
+    "category": "Seguridad inteligente",
     "price": 89.99,
     "oldPrice": 99.99,
-    "description": "Compact and easy-to-install wireless indoor security camera with 1080p HD video, two-way audio, and night vision. Perfect for monitoring pets, children, or elderly family members.",
+    "description": "Cámara de seguridad inalámbrica para interiores, compacta y fácil de instalar, con video HD de 1080p, audio bidireccional y visión nocturna. Perfecta para monitorear mascotas, niños o familiares mayores.",
     "inStock": true,
     "featured": true,
     "averageRating": 4.5,
@@ -229,53 +229,53 @@
       "https://images.unsplash.com/photo-1615483586184-97540fa63b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "1080p HD video quality",
-      "110° wide-angle lens",
-      "Two-way audio",
-      "Night vision up to 10m",
-      "Motion and sound detection alerts",
-      "Easy wireless setup",
-      "Works with Smart Shield mobile app"
+      "Calidad de video HD de 1080p",
+      "Lente gran angular de 110°",
+      "Audio bidireccional",
+      "Visión nocturna de hasta 10 m",
+      "Alertas de detección de movimiento y sonido",
+      "Fácil configuración inalámbrica",
+      "Funciona con la aplicación móvil Smart Shield"
     ],
     "specifications": {
       "Resolution": "1080p Full HD",
       "Field of View": "110°",
-      "Night Vision": "10m range with IR LEDs",
-      "Audio": "Built-in mic and speaker",
-      "Power Source": "AC adapter (included)",
+      "Night Vision": "Alcance de 10 m con LED IR",
+      "Audio": "Micrófono y altavoz integrados",
+      "Power Source": "Adaptador de CA (incluido)",
       "Connectivity": "WiFi 2.4GHz",
-      "Storage": "Cloud storage or MicroSD card (up to 128GB)"
+      "Storage": "Almacenamiento en la nube o tarjeta MicroSD (hasta 128 GB)"
     },
-    "warranty": "1-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 1 año",
     "createdAt": "2023-03-25T10:15:00.000Z",
     "reviews": [
       {
         "author": "Jennifer L.",
         "rating": 5,
         "date": "2023-06-08",
-        "comment": "Perfect little camera for keeping an eye on my pets while I'm at work. The two-way audio is great for calming my dog when he gets anxious."
+        "comment": "Una cámara pequeña perfecta para vigilar a mis mascotas mientras trabajo. El audio bidireccional es genial para calmar a mi perro cuando se pone ansioso."
       },
       {
         "author": "David R.",
         "rating": 4,
         "date": "2023-05-14",
-        "comment": "Good quality for the price. The night vision is better than I expected for an indoor camera."
+        "comment": "Buena relación calidad-precio. La visión nocturna es mejor de lo que esperaba para una cámara de interior."
       },
       {
         "author": "Michelle T.",
         "rating": 5,
         "date": "2023-04-01",
-        "comment": "Easy setup and great picture quality. I bought three more after trying the first one!"
+        "comment": "Fácil de instalar y con excelente calidad de imagen. ¡Compré tres más después de probar el primero!"
       }
     ]
   },
   {
     "id": 6,
-    "name": "4TB Security Hard Drive",
-    "category": "Accessories",
+    "name": "Disco duro de seguridad de 4 TB",
+    "category": "Accesorios",
     "price": 129.99,
     "oldPrice": null,
-    "description": "High-performance 4TB hard drive specifically designed for 24/7 security system operation. Optimized for continuous recording and playback from multiple high-resolution cameras.",
+    "description": "Disco duro de alto rendimiento de 4 TB, diseñado específicamente para sistemas de seguridad operativos 24/7. Optimizado para grabación y reproducción continuas desde múltiples cámaras de alta resolución.",
     "inStock": true,
     "featured": false,
     "averageRating": 4.8,
@@ -285,47 +285,47 @@
       "https://images.unsplash.com/photo-1531492643958-815c21e64af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "4TB storage capacity",
-      "Designed for 24/7 operation",
-      "Supports up to 64 HD cameras",
-      "Enhanced durability for security applications",
-      "Low power consumption",
-      "Quiet operation",
-      "Compatible with all major NVR and DVR systems"
+      "Capacidad de almacenamiento de 4 TB",
+      "Diseñado para funcionamiento 24/7",
+      "Admite hasta 64 cámaras HD",
+      "Mayor durabilidad para aplicaciones de seguridad",
+      "Bajo consumo de energía",
+      "Funcionamiento silencioso",
+      "Compatible con los principales sistemas NVR y DVR"
     ],
     "specifications": {
       "Capacity": "4TB",
-      "Form Factor": "3.5-inch",
+      "Form Factor": "3,5 pulgadas",
       "Interface": "SATA 6Gb/s",
       "Cache": "64MB",
-      "Workload Rate": "180TB/year",
-      "MTBF": "1 million hours",
-      "Power": "5.3W operational, 3.4W idle"
+      "Workload Rate": "180 TB/año",
+      "MTBF": "1 millón de horas",
+      "Power": "5.3W operativo, 3.4W inactivo"
     },
-    "warranty": "3-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 3 años",
     "createdAt": "2023-02-18T09:48:00.000Z",
     "reviews": [
       {
         "author": "Richard K.",
         "rating": 5,
         "date": "2023-05-29",
-        "comment": "Perfect upgrade for our NVR system. Much more storage than the stock drive that came with our system."
+        "comment": "La actualización perfecta para nuestro sistema NVR. Mucho más almacenamiento que la unidad de fábrica que venía con el sistema."
       },
       {
         "author": "Karen J.",
         "rating": 5,
         "date": "2023-04-15",
-        "comment": "Reliable and quiet. Easy to install in our SmartShield NVR."
+        "comment": "Fiable y silencioso. Fácil de instalar en nuestro NVR SmartShield."
       }
     ]
   },
   {
     "id": 7,
-    "name": "Smart Security Motion Sensor - 3 Pack",
-    "category": "Smart Security",
+    "name": "Sensor de movimiento de seguridad inteligente - Paquete de 3",
+    "category": "Seguridad inteligente",
     "price": 79.99,
     "oldPrice": 99.99,
-    "description": "Set of three wireless motion sensors that integrate with your Smart Shield security system. Get instant alerts when motion is detected, with adjustable sensitivity to reduce false alarms.",
+    "description": "Conjunto de tres sensores de movimiento inalámbricos que se integran con su sistema de seguridad Smart Shield. Reciba alertas instantáneas al detectar movimiento, con sensibilidad ajustable para reducir las falsas alarmas.",
     "inStock": true,
     "featured": false,
     "averageRating": 4.6,
@@ -335,46 +335,46 @@
       "https://images.unsplash.com/photo-1585557124308-d6510a6b7b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "Pet-friendly motion detection",
-      "Wireless design for flexible placement",
-      "Adjustable sensitivity",
-      "Integration with Smart Shield app",
-      "Instant push notifications",
-      "Battery life indicator",
-      "Easy installation"
+      "Detección de movimiento compatible con mascotas",
+      "Diseño inalámbrico para una colocación flexible",
+      "Sensibilidad ajustable",
+      "Integración con la app Smart Shield",
+      "Notificaciones push instantáneas",
+      "Indicador de duración de la batería",
+      "Fácil instalación"
     ],
     "specifications": {
-      "Detection Range": "10m with 110° angle",
-      "Battery Life": "Up to 2 years",
-      "Power Source": "CR123A battery (included)",
-      "Connectivity": "Smart Shield Hub (required)",
+      "Detection Range": "10 m con un ángulo de 110°",
+      "Battery Life": "Hasta 2 años",
+      "Power Source": "Batería CR123A (incluida)",
+      "Connectivity": "Smart Shield Hub (obligatorio)",
       "Size": "5.8 × 4.2 × 2.5 cm",
       "Operating Temperature": "-10°C to 50°C"
     },
-    "warranty": "2-year manufacturer warranty",
+    "warranty": "Garantía del fabricante de 2 años",
     "createdAt": "2023-03-08T14:25:00.000Z",
     "reviews": [
       {
         "author": "Steven P.",
         "rating": 5,
         "date": "2023-06-10",
-        "comment": "These sensors work perfectly with our Smart Shield system. The pet mode is great - no false alarms from our cats."
+        "comment": "Estos sensores funcionan a la perfección con nuestro sistema Smart Shield. El modo mascota es fantástico: no hay falsas alarmas de nuestros gatos."
       },
       {
         "author": "Nancy G.",
         "rating": 4,
         "date": "2023-05-02",
-        "comment": "Good quality sensors. Battery life seems good so far and the sensitivity adjustment is helpful."
+        "comment": "Sensores de buena calidad. La duración de la batería parece buena hasta ahora y el ajuste de sensibilidad es útil."
       }
     ]
   },
   {
     "id": 8,
-    "name": "Professional CCTV Installation Service",
-    "category": "Services",
+    "name": "Servicio profesional de instalación de CCTV",
+    "category": "Servicios",
     "price": 299.99,
     "oldPrice": null,
-    "description": "Expert installation service for your Smart Shield security system. Our certified technicians will install, configure, and optimize your cameras and recording equipment for maximum coverage and performance.",
+    "description": "Servicio de instalación experto para su sistema de seguridad Smart Shield. Nuestros técnicos certificados instalarán, configurarán y optimizarán sus cámaras y equipos de grabación para una cobertura y un rendimiento óptimos.",
     "inStock": true,
     "featured": false,
     "averageRating": 4.9,
@@ -384,42 +384,42 @@
       "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     ],
     "features": [
-      "Professional installation by certified technicians",
-      "Optimal camera placement and configuration",
-      "Complete system testing",
-      "User training session",
-      "Mobile app setup and configuration",
-      "Cable management and concealment",
-      "90-day installation guarantee"
+      "Instalación profesional por técnicos certificados,s",
+      "Ubicación y configuración óptimas de la cámara",
+      "Prueba completa del sistema",
+      "Capacitación para usuarios",
+      "Configuración de la aplicación móvil",
+      "Gestión y ocultación de cables",
+      "Garantía de instalación de 90 días"
     ],
     "specifications": {
-      "Service Duration": "4-6 hours (typical)",
-      "Coverage": "Up to 8 cameras",
-      "Includes": "Installation, setup, testing, and training",
-      "Appointment": "Scheduled within 7 business days",
-      "Additional Fees": "May apply for complex installations or extra cabling",
-      "Requirements": "Functioning power outlets and internet connection"
+      "Service Duration": "4-6 horas (típico)",
+      "Coverage": "Hasta 8 cámaras",
+      "Includes": "Instalación, configuración, pruebas y capacitación",
+      "Appointment": "Programado dentro de 7 días hábiles",
+      "Additional Fees": "Puede aplicarse para instalaciones complejas o cableado adicional.",
+      "Requirements": "Tomas de corriente y conexión a Internet en funcionamiento"
     },
-    "warranty": "90-day workmanship guarantee",
+    "warranty": "Garantía de mano de obra de 90 días",
     "createdAt": "2023-01-10T11:25:00.000Z",
     "reviews": [
       {
         "author": "William T.",
         "rating": 5,
-        "date": "2023-06-02",
-        "comment": "The technician was professional, knowledgeable, and did an excellent job hiding the cables. Would definitely recommend the installation service."
+        "date": "2025-06-02",
+        "comment": "El técnico fue profesional, experto e hizo un excelente trabajo ocultando los cables. Sin duda, recomiendo el servicio de instalación."
       },
       {
         "author": "Sandra M.",
         "rating": 5,
-        "date": "2023-04-28",
-        "comment": "Worth every penny! The installer knew exactly where to position the cameras for maximum coverage and took the time to show us how to use the app properly."
+        "date": "2025-04-28",
+        "comment": "¡Valió cada centavo! El instalador sabía exactamente dónde colocar las cámaras para una cobertura máxima y se tomó el tiempo de mostrarnos cómo usar la aplicación correctamente."
       },
       {
         "author": "Kevin B.",
         "rating": 4,
-        "date": "2023-03-15",
-        "comment": "Good service overall. The installer arrived on time and completed the work professionally. The only reason for 4 stars instead of 5 is that it took longer than expected."
+        "date": "2025-03-15",
+        "comment": "Buen servicio en general. El instalador llegó puntualmente y completó el trabajo con profesionalidad. La única razón por la que le doy 4 estrellas en lugar de 5 es que tardó más de lo esperado."
       }
     ]
   }

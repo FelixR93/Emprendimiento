@@ -17,7 +17,7 @@ function Register() {
     setError('');
 
     if (password !== confirmPassword) {
-      return setError('Passwords do not match');
+      return setError('Lacontraseña no coincide');
     }
 
     setIsLoading(true);
@@ -26,7 +26,7 @@ function Register() {
       await register(name, email, password);
       navigate('/login');
     } catch (err) {
-      setError('Failed to create an account. ' + err.message);
+      setError('No se pudo crear una cuenta. ' + err.message);
       console.error(err);
     } finally {
       setIsLoading(false);
@@ -36,7 +36,7 @@ function Register() {
   return (
     <div className="flex items-center justify-center min-h-[80vh]">
       <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Create an account</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Crear una Cuenta</h2>
         
         {error && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4" role="alert">
           <span className="block sm:inline">{error}</span>
@@ -45,7 +45,7 @@ function Register() {
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-              Full Name
+              Nombre Completo
             </label>
             <input
               id="name"
@@ -54,13 +54,13 @@ function Register() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              placeholder="John Doe"
+              placeholder="Juan Pérez"
             />
           </div>
           
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-              Email Address
+              Correo Electrónico
             </label>
             <input
               id="email"
@@ -75,7 +75,7 @@ function Register() {
           
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-              Password
+              Contraseña
             </label>
             <input
               id="password"
@@ -90,7 +90,7 @@ function Register() {
           
           <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="confirmPassword">
-              Confirm Password
+              Confirmar Contraseña
             </label>
             <input
               id="confirmPassword"
@@ -109,19 +109,19 @@ function Register() {
               disabled={isLoading}
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             >
-              {isLoading ? 'Creating Account...' : 'Register'}
+              {isLoading ? 'Creando cuenta...' : 'Registrate'}
             </button>
           </div>
           
           <div className="text-center">
             <p className="text-sm text-gray-600">
-              Already have an account?{' '}
+              Ya tienes una cuenta?{' '}
               <button 
                 type="button" 
                 onClick={() => navigate('/login')}
                 className="text-blue-600 hover:text-blue-800 font-medium"
               >
-                Sign in
+                Iniciar Sesión
               </button>
             </p>
           </div>

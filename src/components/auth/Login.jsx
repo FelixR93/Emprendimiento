@@ -19,7 +19,7 @@ function Login() {
       await login(email, password);
       navigate('/');
     } catch (err) {
-      setError('Failed to login. Please check your credentials.');
+      setError('Error al iniciar sesión. Por favor, revise sus credenciales.');
       console.error(err);
     } finally {
       setIsLoading(false);
@@ -47,13 +47,13 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="your@email.com"
+              placeholder="Correo Electrónico o número de telefono"
             />
           </div>
           
           <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-              Password
+              Contraseña
             </label>
             <input
               id="password"
@@ -72,19 +72,19 @@ function Login() {
               disabled={isLoading}
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             >
-              {isLoading ? 'Signing in...' : 'Sign In'}
+              {isLoading ? 'Iniciar Sesión...' : 'Acceso'}
             </button>
           </div>
           
           <div className="text-center">
             <p className="text-sm text-gray-600">
-              Don't have an account?{' '}
+              No tienes una cuenta?{' '}
               <button 
                 type="button" 
                 onClick={() => navigate('/register')}
                 className="text-blue-600 hover:text-blue-800 font-medium"
               >
-                Register here
+                Regístrate aquí
               </button>
             </p>
           </div>

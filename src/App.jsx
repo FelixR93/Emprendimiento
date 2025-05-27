@@ -9,6 +9,8 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import SupportPage from './pages/SupportPage';
+import Contact from './pages/Contact'; 
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/support" element={<SupportPage />} />
+              <Route path="/contacto" element={<Contact />} />
             </Routes>
           </main>
           <Footer />

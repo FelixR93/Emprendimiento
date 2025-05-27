@@ -22,17 +22,16 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // In a real app, this would fetch from an API
         const response = await fetch('/data/products.json');
         const data = await response.json();
         
         setProducts(data);
         
-        // Extract unique categories
+        // Extraer categorías únicas
         const uniqueCategories = [...new Set(data.map(product => product.category))];
         setCategories(uniqueCategories);
         
-        // If URL has category parameter, filter by it
+        // Si la URL tiene un parámetro de categoría, filtrar por él
         if (categoryParam) {
           setSelectedCategory(categoryParam);
         }
@@ -47,16 +46,16 @@ function ProductList() {
     fetchProducts();
   }, [categoryParam]);
 
-  // Apply filters whenever filter states change
+// Aplicar filtros siempre que cambien los estados de los filtros
   useEffect(() => {
     let result = [...products];
     
-    // Filter by category
+    // Filtrar por categoría
     if (selectedCategory !== 'all') {
       result = result.filter(product => product.category.toLowerCase() === selectedCategory.toLowerCase());
     }
     
-    // Filter by search query
+    // Filtrar por consulta de búsqueda
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       result = result.filter(product => 
@@ -65,13 +64,13 @@ function ProductList() {
       );
     }
     
-    // Filter by price range
+    // Filtrar por rango de precio
     result = result.filter(product => 
       product.price >= priceRange.min && 
       product.price <= priceRange.max
     );
     
-    // Apply sorting
+    // Aplicar clasificación
     switch (sortOption) {
       case 'price-low':
         result.sort((a, b) => a.price - b.price);
@@ -86,14 +85,14 @@ function ProductList() {
         result.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
         break;
       default:
-        // Default sorting (featured)
+        // Ordenación predeterminada (destacada)
         result.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
     }
     
     setFilteredProducts(result);
   }, [products, selectedCategory, searchQuery, priceRange, sortOption]);
 
-  // Update URL when category changes
+  // Actualizar la URL cuando cambia la categoría
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
     if (category === 'all') {
@@ -131,32 +130,32 @@ function ProductList() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Security Products</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Productos de seguridad</h1>
       
-      {/* Search and Filter Controls */}
+      {/*Controles de búsqueda y filtrado*/}
       <div className="mb-8 bg-white p-4 rounded-lg shadow">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="w-full md:w-1/3">
-            <label htmlFor="search" className="block text-sm font-medium text-gray-700">Search</label>
+            <label htmlFor="search" className="block text-sm font-medium text-gray-700">Buscar</label>
             <input
               type="text"
               id="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search products..."
+              placeholder="Buscar productos..."
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
           
           <div className="w-full md:w-1/3">
-            <label htmlFor="category" className="block text-sm font-medium text-gray-700">Category</label>
+            <label htmlFor="category" className="block text-sm font-medium text-gray-700">Categoría</label>
             <select
               id="category"
               value={selectedCategory}
               onChange={(e) => handleCategoryChange(e.target.value)}
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
-              <option value="all">All Categories</option>
+              <option value="all">Todas las categorías</option>
               {categories.map((category) => (
                 <option key={category} value={category.toLowerCase()}>
                   {category}
@@ -166,18 +165,18 @@ function ProductList() {
           </div>
           
           <div className="w-full md:w-1/3">
-            <label htmlFor="sort" className="block text-sm font-medium text-gray-700">Sort By</label>
+            <label htmlFor="sort" className="block text-sm font-medium text-gray-700">Ordenar por</label>
             <select
               id="sort"
               value={sortOption}
               onChange={(e) => setSortOption(e.target.value)}
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
-              <option value="default">Featured</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="rating">Best Rating</option>
-              <option value="newest">Newest</option>
+              <option value="default">Presentar</option>
+              <option value="price-low">Precio: bajo a alto</option>
+              <option value="price-high">Precio: Alto a bajo</option>
+              <option value="rating">Mejor calificación</option>
+              <option value="newest">El más nuevo</option>
             </select>
           </div>
         </div>
@@ -208,12 +207,12 @@ function ProductList() {
           </div>
         </div>
       </div>
-      
-      {/* Product Results */}
+
+      {/*Resultados del producto*/}
       <div className="bg-white p-4 rounded-lg shadow">
         <div className="mb-4">
           <p className="text-sm text-gray-500">
-            Showing {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
+            Demostración {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
           </p>
         </div>
         
@@ -222,8 +221,8 @@ function ProductList() {
             <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <h3 className="mt-2 text-gray-900 text-lg font-medium">No products found</h3>
-            <p className="mt-1 text-gray-500">Try adjusting your search or filter options.</p>
+            <h3 className="mt-2 text-gray-900 text-lg font-medium">No se encontraron productos</h3>
+            <p className="mt-1 text-gray-500">Intente ajustar sus opciones de búsqueda o filtro.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">

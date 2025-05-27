@@ -13,11 +13,10 @@ function ProductDetail() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        // In a real app, this would fetch from an API
         const response = await fetch('/data/products.json');
         const data = await response.json();
         
-        // Find product by ID
+        // Buscar producto por ID
         const foundProduct = data.find(p => p.id === parseInt(id));
         
         if (!foundProduct) {
@@ -37,8 +36,6 @@ function ProductDetail() {
   }, [id]);
 
   const handleAddToCart = () => {
-    // In a real app, this would add the product to the cart
-    // For now, just simulate the action
     alert(`Added ${quantity} ${product.name}(s) to cart`);
   };
 
@@ -69,7 +66,7 @@ function ProductDetail() {
               onClick={() => navigate('/products')}
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
             >
-              Go back to products
+              Volver a productos
             </button>
           </div>
         </div>
@@ -151,11 +148,11 @@ function ProductDetail() {
             <div>
               {product.inStock ? (
                 <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                  In Stock
+                  En stock
                 </span>
               ) : (
                 <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                  Out of Stock
+                  Agotado
                 </span>
               )}
             </div>
@@ -172,7 +169,7 @@ function ProductDetail() {
                         : 'border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300'
                     } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
                   >
-                    Description
+                    Descripción
                   </button>
                   <button
                     onClick={() => setActiveTab('specifications')}
@@ -182,7 +179,7 @@ function ProductDetail() {
                         : 'border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300'
                     } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
                   >
-                    Specifications
+                    Especificaciones
                   </button>
                   <button
                     onClick={() => setActiveTab('reviews')}
@@ -192,7 +189,7 @@ function ProductDetail() {
                         : 'border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300'
                     } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
                   >
-                    Reviews
+                    Reseñas
                   </button>
                 </div>
               </div>
@@ -255,7 +252,7 @@ function ProductDetail() {
                         ))}
                       </div>
                     ) : (
-                      <p className="text-sm text-gray-500">No reviews yet.</p>
+                      <p className="text-sm text-gray-500">Aún no hay reseñas.</p>
                     )}
                   </div>
                 )}
@@ -303,7 +300,7 @@ function ProductDetail() {
                     onClick={handleAddToCart}
                     className="ml-4 flex-1 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
-                    Add to cart
+                    Añadir al carrito
                   </button>
                 </div>
               </div>

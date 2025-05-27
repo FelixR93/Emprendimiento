@@ -1,36 +1,36 @@
-# React + Vite Template
+# Plantilla React + Vite
 
-A modern React template for web applications and games, featuring React 18, Vite, TailwindCSS, and Material UI.
+Una plantilla React moderna para aplicaciones web y juegos, con React 18, Vite, TailwindCSS y Material UI.
 
-## Project Structure
+## Estructura del proyecto
 
 ```
 ├── src/
-│   ├── App.jsx          # Main application component
-│   ├── main.jsx         # Application entry point
-│   └── index.css        # Global styles (Tailwind)
-├── public/              # Static assets
-├── index.html           # HTML template
-├── vite.config.js       # Vite configuration
-├── tailwind.config.js   # Tailwind configuration
-├── postcss.config.js    # PostCSS configuration
-└── eslint.config.js     # ESLint configuration
+│ ├── App.jsx               # Componente principal de la aplicación
+│ ├── main.jsx              # Punto de entrada de la aplicación
+│ └── index.css             # Estilos globales (Tailwind)
+├── public/                 # Recursos estáticos
+├── index.html              # Plantilla HTML
+├── vite.config.js          # Configuración de Vite
+├── tailwind.config.js      # Configuración de Tailwind
+├── postcss.config.js       # Configuración de PostCSS
+└── eslint.config.js        # Configuración de ESLint
 ```
 
-## Development Guidelines
+## Pautas de desarrollo
 
-- Modify `index.html` and `src/App.jsx` as needed
-- Create new folders or files in `src/` directory as needed
-- Style components using TailwindCSS utility classes
-- Avoid modifying `src/main.jsx` and `src/index.css`
-- Only modify `vite.config.js` if absolutely necessary
+- Modifique `index.html` y `src/App.jsx` según sea necesario
+- Cree nuevas carpetas o archivos en el directorio `src/` según sea necesario
+- Aplique estilos a los componentes usando las clases de utilidad TailwindCSS
+- Evite modificar `src/main.jsx` y `src/index.css`
+- Modifique `vite.config.js` solo si es absolutamente necesario
 
-## Available Scripts
-- `pnpm install` - Install dependencies
-- `pnpm run dev` - Start development server
-- `pnpm run lint` - Lint source files
+## Scripts disponibles
+- `npm install` - Instalar dependencias
+- `npm run dev` - Iniciar servidor de desarrollo
+- `npm run lint` - Lint source files
 
-## Tech Stack
+## Pila de tecnología
 
 - React
 - Vite

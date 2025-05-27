@@ -23,11 +23,12 @@ function ProductCard({ product }) {
       <div className="mt-2">
         {product.inStock ? (
           <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-            In Stock
+            En stock
+
           </span>
         ) : (
           <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-            Out of Stock
+            Agotado
           </span>
         )}
       </div>
@@ -50,7 +51,7 @@ function ProductCard({ product }) {
               </svg>
             ))}
             <span className="ml-2 text-sm text-gray-600">
-              ({product.reviewCount} reviews)
+              ({product.reviewCount} opiniones)
             </span>
           </div>
         )}

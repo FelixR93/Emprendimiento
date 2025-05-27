@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// Create authentication context
+// Crear contexto de autenticación
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
@@ -8,32 +8,32 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  // Check if there's a logged-in user when the app loads
+// Comprueba si hay un usuario conectado cuando se carga la aplicación
   useEffect(() => {
-    // In a real app, this would check with the backend/Firebase/etc
+// Esto se comprobaría con el backend/Firebase/etc.
     const storedUser = localStorage.getItem('smartShieldUser');
     if (storedUser) {
       try {
         setCurrentUser(JSON.parse(storedUser));
       } catch (error) {
-        console.error('Error parsing stored user:', error);
+        console.error('Error al analizar el usuario almacenado:', error);
         localStorage.removeItem('smartShieldUser');
       }
     }
     setLoading(false);
   }, []);
 
-  // Register a new user
+// Registrar un nuevo usuario
   const register = async (name, email, password) => {
     setLoading(true);
     setError('');
     
     try {
-      // In a real app, this would call an API to create a user
-      // Simulating an API call
+      // Esto llamaría a una API para crear un usuario
+      // Simulación de una llamada API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // For demonstration purposes only - in a real app, this would be handled by the backend
+      // Esto lo manejaría el backend.
       const newUser = {
         id: Math.floor(Math.random() * 10000),
         name,
@@ -41,36 +41,36 @@ export const AuthProvider = ({ children }) => {
         createdAt: new Date().toISOString()
       };
 
-      // Save user in local storage (in a real app, you'd use cookies/JWT)
+      // Guardar al usuario en el almacenamiento local (en una aplicación real, se usaría cookies/JWT)
       localStorage.setItem('smartShieldUser', JSON.stringify(newUser));
       
-      // Set the current user
+      // Establecer el usuario actual
       setCurrentUser(newUser);
       return newUser;
     } catch (error) {
-      setError(error.message || 'Registration failed');
+      setError(error.message || 'Registro fallido');
       throw error;
     } finally {
       setLoading(false);
     }
   };
 
-  // Log in an existing user
+  // Iniciar sesión como usuario existente
   const login = async (email, password) => {
     setLoading(true);
     setError('');
     
     try {
-      // In a real app, this would validate credentials with the backend
-      // Simulating an API call
+      // esto validaría las credenciales con el backend.
+      // Simulación de una llamada API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // For demonstration purposes - in a real app, this would be verified by the server
-      if (email === 'demo@smartshield.com' && password === 'password') {
+      // esto sería verificado por el servidor.
+      if (email === 'felixarueda1993@gmail.com' && password === 'contraseña') {
         const user = {
           id: 12345,
-          name: 'Demo User',
-          email: 'demo@smartshield.com',
+          name: 'felix',
+          email: 'felixarueda1993@gmail.com',
           createdAt: new Date().toISOString()
         };
         
@@ -78,10 +78,10 @@ export const AuthProvider = ({ children }) => {
         setCurrentUser(user);
         return user;
       } else {
-        throw new Error('Invalid email or password');
+        throw new Error('Correo electrónico o contraseña no válidos');
       }
     } catch (error) {
-      setError(error.message || 'Login failed');
+      setError(error.message || 'Error de inicio de sesion');
       throw error;
     } finally {
       setLoading(false);
@@ -93,66 +93,66 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     
     try {
-      // In a real app, this would call an API to invalidate the session
-      // Simulating an API call
+      // esto llamaría a una API para invalidar la sesión.
+      // Simulación de una llamada API
       await new Promise(resolve => setTimeout(resolve, 500));
       
-      // Clear user from local storage
+      // Borrar usuario del almacenamiento local
       localStorage.removeItem('smartShieldUser');
       setCurrentUser(null);
     } catch (error) {
-      console.error('Logout error:', error);
+      console.error('Error al cerrar sesión:', error);
     } finally {
       setLoading(false);
     }
   };
 
-  // Reset password
+  // Restablecer contraseña
   const resetPassword = async (email) => {
     setLoading(true);
     setError('');
     
     try {
-      // In a real app, this would trigger a password reset email
-      // Simulating an API call
+      // Esto activaría un correo electrónico de restablecimiento de contraseña.
+      // Simulación de una llamada API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // For demonstration purposes only
-      return { success: true, message: 'Password reset email sent' };
+      // Sólo con fines de demostración
+      return { success: true, message: 'Correo electrónico de restablecimiento de contraseña enviado' };
     } catch (error) {
-      setError(error.message || 'Password reset failed');
+      setError(error.message || 'Error al restablecer la contraseña');
       throw error;
     } finally {
       setLoading(false);
     }
   };
 
-  // Update user profile
+  // Actualizar perfil de usuario
   const updateProfile = async (userData) => {
     setLoading(true);
     setError('');
     
     try {
-      // In a real app, this would update user data in the backend
-      // Simulating an API call
+      // esto actualizaría los datos del usuario en el backend.
+      // Simulación de una llamada API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Update the user in local storage
+      // Actualizar el usuario en el almacenamiento local
       const updatedUser = { ...currentUser, ...userData };
       localStorage.setItem('smartShieldUser', JSON.stringify(updatedUser));
       
-      // Update current user state
+      // Actualizar el estado actual del usuario
       setCurrentUser(updatedUser);
       return updatedUser;
     } catch (error) {
-      setError(error.message || 'Profile update failed');
+      setError(error.message || 'Error al actualizar el perfil');
       throw error;
     } finally {
       setLoading(false);
     }
   };
 
-  // Context value
+  // Valor de contexto
   const value = {
     currentUser,
     loading,
@@ -171,11 +171,11 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use the auth context
+// Gancho personalizado para usar el contexto de autenticación
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    throw new Error('useAuth debe usarse dentro de un AuthProvider');
   }
   return context;
 };
