@@ -251,8 +251,7 @@ function Footer() {
 
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <p className="text-sm text-gray-400">
-            &copy; {currentYear} Soluciones de seguridad Smart Shield. Todos los
-            derechos reservados..
+            &copy; {currentYear} Soluciones de seguridad Smart Shield. Desarrollado por Félix Rueda
           </p>
           <div className="mt-4 flex space-x-6 md:mt-0">
             <Link
