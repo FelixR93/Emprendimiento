@@ -7,8 +7,8 @@ function HomePage() {
   return (
     <div>
       <Hero />
-      <FeaturedProducts />
       <AboutSection/>
+      <FeaturedProducts />
     </div>
   );
 }

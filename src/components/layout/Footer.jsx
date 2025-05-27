@@ -70,7 +70,7 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/support"
+                  to="/services"
                   className="text-sm text-gray-400 hover:text-white"
                 >
                   Soporte Técnico
@@ -78,7 +78,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/support/faqs"
+                  to="/support"
                   className="text-sm text-gray-400 hover:text-white"
                 >
                   Preguntas frecuentes
@@ -94,7 +94,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/support"
                   className="text-sm text-gray-400 hover:text-white"
                 >
                   Contacta con nosotros

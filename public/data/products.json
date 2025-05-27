@@ -10,12 +10,12 @@
     "featured": true,
     "averageRating": 4.8,
     "reviewCount": 124,
-    "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/1.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1595939692949-4727e186eb8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1650652964220-ca824189e9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/1.png",
+      "/assets/images/camaras/2.png",
+      "/assets/images/camaras/3.png",
+      "/assets/images/camaras/4.jpg"
     ],
     "features": [
       "Resolución 4K Ultra HD (3840 x 2160)",
@@ -69,10 +69,11 @@
     "featured": true,
     "averageRating": 4.6,
     "reviewCount": 89,
-    "imageUrl": "https://images.unsplash.com/photo-1558000143-a78f8299c40b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/5.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1558000143-a78f8299c40b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1611095567319-2f4c389168a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/5.jpg",
+      "/assets/images/camaras/6.jpg",
+      "/assets/images/camaras/7.jpg"
     ],
     "features": [
       "Calidad de video HD de 1080p",
@@ -121,10 +122,10 @@
     "featured": true,
     "averageRating": 4.9,
     "reviewCount": 56,
-    "imageUrl": "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/8.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1648211750999-a6be8338766c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/8.jpg",
+      "/assets/images/camaras/9.jpg"
     ],
     "features": [
       "NVR de 8 canales con 2 TB de almacenamiento (ampliable)",
@@ -173,9 +174,10 @@
     "featured": false,
     "averageRating": 4.7,
     "reviewCount": 42,
-    "imageUrl": "https://images.unsplash.com/photo-1541323477077-3fcbaefa62e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/10.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1541323477077-3fcbaefa62e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/10.jpg",
+      "/assets/images/camaras/11.jpg"
     ],
     "features": [
       "Zoom óptico de 25x",
@@ -224,9 +226,10 @@
     "featured": true,
     "averageRating": 4.5,
     "reviewCount": 112,
-    "imageUrl": "https://images.unsplash.com/photo-1615483586184-97540fa63b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/12.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1615483586184-97540fa63b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/12.jpg",
+      "/assets/images/camaras/13.jpg"
     ],
     "features": [
       "Calidad de video HD de 1080p",
@@ -280,9 +283,10 @@
     "featured": false,
     "averageRating": 4.8,
     "reviewCount": 36,
-    "imageUrl": "https://images.unsplash.com/photo-1531492643958-815c21e64af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/14.jpeg",
     "gallery": [
-      "https://images.unsplash.com/photo-1531492643958-815c21e64af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/14.jpeg",
+      "/assets/images/camaras/15.png"
     ],
     "features": [
       "Capacidad de almacenamiento de 4 TB",
@@ -330,9 +334,10 @@
     "featured": false,
     "averageRating": 4.6,
     "reviewCount": 58,
-    "imageUrl": "https://images.unsplash.com/photo-1585557124308-d6510a6b7b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/16.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1585557124308-d6510a6b7b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/16.jpg",
+      "/assets/images/camaras/17.jpg"
     ],
     "features": [
       "Detección de movimiento compatible con mascotas",
@@ -379,9 +384,11 @@
     "featured": false,
     "averageRating": 4.9,
     "reviewCount": 87,
-    "imageUrl": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    "imageUrl": "/assets/images/camaras/18.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      "/assets/images/camaras/18.jpg",
+      "/assets/images/camaras/20.avif",
+      "/assets/images/camaras/19.jpg"
     ],
     "features": [
       "Instalación profesional por técnicos certificados,s",

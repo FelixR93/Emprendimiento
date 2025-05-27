@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Soporte Técnico",
+    "description": "Asistencia técnica especializada para todos sus sistemas de seguridad.",
+    "icon": "support",
+    "features": [
+      "Asistencia telefónica 24/7",
+      "Diagnóstico y resolución de problemas",
+      "Actualización de software y firmware",
+      "Configuración remota",
+      "Visitas técnicas programadas"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Instalación Profesional",
+    "description": "Servicio de instalación de cámaras, sistemas CCTV y alarmas realizada por técnicos certificados.",
+    "icon": "install",
+    "features": [
+      "Evaluación inicial del sitio",
+      "Instalación siguiendo normativas",
+      "Cableado profesional",
+      "Configuración completa del sistema",
+      "Pruebas de funcionamiento"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mantenimiento Preventivo",
+    "description": "Servicio de mantenimiento periódico para garantizar el óptimo funcionamiento de sus sistemas de seguridad.",
+    "icon": "maintenance",
+    "features": [
+      "Limpieza de equipos",
+      "Verificación de conexiones",
+      "Ajuste de cámaras y sensores",
+      "Comprobación de grabaciones",
+      "Informes de estado"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Consultoría de Seguridad",
+    "description": "Asesoramiento especializado para diseñar soluciones de seguridad personalizadas según sus necesidades.",
+    "icon": "consulting",
+    "features": [
+      "Evaluación de riesgos",
+      "Diseño de sistemas a medida",
+      "Optimización de recursos",
+      "Planes de seguridad integral",
+      "Recomendaciones según normativa"
+    ]
+  }
+]

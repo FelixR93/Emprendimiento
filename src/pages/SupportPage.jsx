@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SupportForm from '../components/support/SupportForm';
 import FAQs from '../components/support/FAQs';
+import Contact from './Contact';
 
 function SupportPage() {
   const [activeTab, setActiveTab] = useState('contact');
@@ -38,7 +39,7 @@ function SupportPage() {
         
         {/* Tab content */}
         <div>
-          {activeTab === 'contact' ? <SupportForm /> : <FAQs />}
+          {activeTab === 'contact' ? <Contact /> : <FAQs />}
         </div>
       </div>
     </div>
