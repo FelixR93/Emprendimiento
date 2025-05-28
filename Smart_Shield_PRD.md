@@ -1,7 +1,7 @@
 # Documento de Requisitos del Producto (PRD)
 ## Sitio Web E-Commerce para Smart Shield
 
-Fecha: 24/05/2025
+Fecha: 20/05/2025
 
 ## 1. Información del Proyecto
 
@@ -12,9 +12,6 @@ Smart Shield busca desarrollar un sitio web profesional de comercio electrónico
 - **Frontend**: React
 - **Backend**: Node.js
 - **Base de Datos**: MongoDB
-
-### 1.3 Requisito Original
-Crear una página web profesional de ventas de equipos CCTV, cámaras de seguridad y soporte técnico para la empresa Smart Shield. El sitio debe incluir un sistema de autenticación (login) y utilizar MongoDB como base de datos. El diseño debe ser profesional e incluir un logotipo relacionado con cámaras de seguridad.
 
 ## 2. Definición del Producto
 
