@@ -1,7 +1,5 @@
 # Plantilla React + Vite
 
-Una plantilla React moderna para aplicaciones web y juegos, con React 18, Vite, TailwindCSS y Material UI.
-
 ## Estructura del proyecto
 
 ```
